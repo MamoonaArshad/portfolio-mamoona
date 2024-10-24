@@ -1,12 +1,14 @@
 import React from 'react'
 import About from '../components/About/About'
+import AboutMe from '../components/About/AboutMe'
 
-const landingPage = () => {
+const Landing = () => {
   return (
     <div>
         <About />
+        
     </div>
   )
 }
 
-export default landingPage
+export default Landing
