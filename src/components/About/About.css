@@ -1,0 +1,16 @@
+.small {
+    font-weight: 300;
+    font-size: small ; /* Bold for "Hello World!" */
+  }
+  
+  .medium {
+    font-weight: 700;
+    font-size: xx-large; /* Regular for "Mamoona Arshad" */
+  }
+  
+  .large {
+    font-weight: 500;
+    font-size: x-large;
+    color:  #8a2be2 ; /* Lighter weight for "Frontend Developer" */
+  }
+  

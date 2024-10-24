@@ -1,38 +1,49 @@
+/* Styling for the entire app */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #000311e9; /* Dark blue jean color */
+  font-family: 'Courier New', Courier, monospace; /* Typewriter-like font */
+  color: white; /* White text */
+  min-height: 100vh; /* Ensures full viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: center; /* This will center the About section vertically */
+  padding-top: 80px; /* Ensures there's space below the fixed Navbar */
+}
+
+/* Style for the Navbar component */
+nav {
+  width: 100%;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0; /* Anchors it to the top of the page */
+  left: 0;
+  background-color: #000311e9; /* Slightly darker shade for the navbar */
+  padding: 1rem 0;
+  z-index: 1000; /* Ensures navbar stays on top of other elements */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow to the navbar */
+}
+
+/* Style for navbar links (if any) */
+nav a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+nav a:hover {
+  color: #000966; /* Light blue color on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling the About section to center it */
+.About {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text inside the About section */
+  min-height: calc(100vh - 80px); /* Takes full remaining height minus navbar height */
+  width: 100%;
+  padding: 20px;
 }
